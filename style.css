@@ -1,0 +1,154 @@
+body{
+	background-color: #1B262C;
+	background-size: cover;
+	color: #0F4C75;
+}
+header {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#upper {
+	margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 23em;
+	background: #B9D7EA;
+	align-items: center;
+	justify-content: center;
+}
+
+#matrix1, #matrix2{
+	order: 1;
+	width: 9em;
+	height: 40%;
+}
+#matrix1>input, #matrix2>input{
+	color: rgb(0, 0, 0);
+}
+
+#operations {
+	order: 1;
+	width: 5em;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+.btn_Matrix{
+	display: inline-block;
+}
+
+.btn_Calc{
+	display: inline-block;
+}
+.btn_Calc,.btn_Matrix{
+	background-color: transparent;
+	border-color: white;
+	border-radius: 0px;
+	width: 130px;
+	height: 50px;
+	color: white;
+	margin-bottom: 20px;
+	border-width: 3px;
+}
+.btn_Calc:hover,.btn_Matrix:hover{
+	background-color: #00897b;
+	transition: 0.3s;
+	border-color: #00897b;
+}
+.btn_Calc:active,.btn_Matrix:active{
+	background-color: #004a43;
+	transition: 0.3s;
+	border-color: #004a43;
+}
+.operation {
+	width: 5em;
+	height: 10%;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	background-color: #3282B8;
+	margin: 1.5%;
+}
+
+
+.parent {
+	display: flex;
+	flex-flow: row wrap;
+	width: 9em;
+	background: #B9D7EA;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	order: 1;
+	font-family: "Times New Roman", serif;
+	width: 9em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r1, .m2r1 {
+	order: 2;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r2, .m2r2 {
+	order: 3;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.m1r3, .m2r3 {
+	order: 4;
+	width: 3em;
+	height: 10%;
+	text-align: center;
+}
+
+.functions {
+	order: 5;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.function {
+	width: 10em;
+	height: 10%;
+	border-radius: 2em;
+	background-color: #3282B8;
+	color: white;
+
+}
+
+#console {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+	height: 50%;
+	resize: none;
+}
+h1 {
+	color: white;
+	} 
+h2 {
+	font-size: 1.5em;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Матричный калькулятор REDFRONT</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./MatrixCalculator.js"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<h1>REDFRONT</h1>
+		</div>
+	</header>
+	<div id="upper">
+		<div id="matrix1" class="parent">
+			<h2 class="title">Матрица A</h2>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>		
+			
+		</div>
+		<div id="operations">
+			<input class="operation" type="button" value="A x B" onclick="mc.multiplyMatrix()"/>
+			<input class="operation" type="button" value="A + B" onclick="mc.addMatrix()"/>
+			<input class="operation" type="button" value="A - B" onclick="mc.subtractMatrix()"/>
+		</div>
+		<div id="matrix2" class="parent">
+			<h2 class="title">Матрица B</h2>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>		
+		</div>
+		<div class="functions">
+			<input class="function" type="button" value="Определитель" onclick="mc.calculateDeterminant()"/>
+			<input class="function" type="button" value="Транспереход" onclick="mc.transposeMatrix()"/>
+			<input class="function" type="button" value="Обратная матрица" onclick="mc.invertMatrix()"/>
+			<input class="function" type="button" value="Ранг матрицы" onclick="mc.calculateRank()"/>
+		</div>
+	</div>
+
+	<br>
+	<div id="lower">
+			<textarea wrap="soft" rows="10" cols="20" id="console" disabled></textarea>
+	</div>
+</body>
+</html>
